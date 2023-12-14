@@ -74,3 +74,10 @@ crashlytics-build.properties
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
+
+# TextMesh Pro
+/[Aa]ssets/[Tt]ext[Mm]esh [Pp]ro*
+!/[Aa]ssets/[Tt]ext[Mm]esh [Pp]ro/
+
+/[Aa]ssets/[Tt]ext[Mm]esh [Pp]ro/*
+!/[Aa]ssets/[Tt]ext[Mm]esh [Pp]ro/Fonts
