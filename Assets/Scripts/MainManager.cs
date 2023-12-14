@@ -93,4 +93,9 @@ public class MainManager : MonoBehaviour
         m_GameOver = true;
         GameOverText.SetActive(true);
     }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
