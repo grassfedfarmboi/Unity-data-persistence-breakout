@@ -54,6 +54,9 @@ public class GameManager : MonoBehaviour
 
             HighScoreName = data.HighScoreName;
             HighScore = data.HighScore;
+        } else {
+            HighScoreName = "None";
+            HighScore = 0;
         }
     }
 }

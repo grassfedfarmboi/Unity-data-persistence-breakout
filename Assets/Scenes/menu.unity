@@ -396,7 +396,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2144123918}
+        m_TargetAssemblyTypeName: UIMenuHandler, Assembly-CSharp
+        m_MethodName: SetPlayerName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1418,7 +1430,7 @@ GameObject:
   - component: {fileID: 1712024770}
   - component: {fileID: 1712024769}
   m_Layer: 5
-  m_Name: High Score
+  m_Name: High Score Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1496,7 +1508,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 5
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1823,7 +1835,7 @@ GameObject:
   - component: {fileID: 2092809176}
   - component: {fileID: 2092809175}
   m_Layer: 5
-  m_Name: High Score Name
+  m_Name: High Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1868,7 +1880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Name: 00'
+  m_text: Name . . . 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1126d3c1b8d894c36be8eeb6b4c5f0dd, type: 2}
   m_sharedMaterial: {fileID: -3061441061565767139, guid: 1126d3c1b8d894c36be8eeb6b4c5f0dd, type: 2}
@@ -2065,6 +2077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbf525dce0da4816ab2daaa13d18b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: {fileID: 2092809175}
+  playerNameInput: {fileID: 398684890}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

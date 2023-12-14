@@ -2,22 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
 public class UIMenuHandler : MonoBehaviour
 {
+    public TMP_Text highScore;
+    public TMP_InputField playerNameInput;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameManager.Instance.HighScoreName != null)
+        {
+            highScore.text = GameManager.Instance.HighScoreName + " . . . " + GameManager.Instance.HighScore;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void SetPlayerName()
+    {
+        GameManager.Instance.PlayerName = playerNameInput.text;
+        Debug.Log("Player name: " + GameManager.Instance.PlayerName);
     }
 
     public void Play()
@@ -27,10 +40,10 @@ public class UIMenuHandler : MonoBehaviour
 
     public void Exit()
     {
-        #if UNITY_EDITOR // Conditional compiling logic
+        #if UNITY_EDITOR
             EditorApplication.ExitPlaymode();
         #else
-            Application.Quit(); // original code to quit Unity player
+            Application.Quit();
         #endif
     }
 }
