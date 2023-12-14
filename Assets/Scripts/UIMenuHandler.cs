@@ -21,12 +21,6 @@ public class UIMenuHandler : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetPlayerName()
     {
         GameManager.Instance.PlayerName = playerNameInput.text;
