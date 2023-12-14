@@ -30,7 +30,6 @@ public class UIMenuHandler : MonoBehaviour
     public void SetPlayerName()
     {
         GameManager.Instance.PlayerName = playerNameInput.text;
-        Debug.Log("Player name: " + GameManager.Instance.PlayerName);
     }
 
     public void Play()
